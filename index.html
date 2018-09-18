@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<title>Carnet.live</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<style>
+	/* latin-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(1Ptug8zYS_SKggPNyCMIT5lu.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(1Ptug8zYS_SKggPNyC0ITw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+
+#header{
+	width:100%;
+	z-index:2;
+	position:fixed;
+	height:56px;
+	color:white;
+	font-size:20px !important;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+	background: rgb(63, 81, 181);
+}
+.right{
+	float:right;
+}
+.bgimg {
+    height: calc(100% - 56px);
+    margin-top:56px;
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.bgimg1 {
+    background-image: url('background.png');
+}
+.bgimg2 {
+    background-image: url('overview.png');
+    background-size: auto ;
+}
+.bgimg3{
+	background-image: url('editor.png');
+	background-size: auto;
+}
+
+@media screen and (max-width:600px){
+	.bgimg3{
+		background-image: url('editor-small.png');
+		background-size: contain;
+	}
+}
+
+.button:hover{
+	background:rgb(63, 81, 230);	
+}
+
+.slide{
+	background:rgba(255, 255, 255,0.9);
+}
+
+@media screen and (min-width:1100px){
+	.slide{
+		width:50%;
+		text-align:center;
+	}
+}
+
+@media screen and (max-width:1100px){
+	.slide{
+		width: 100%;
+	margin-right: 0px;
+		text-align:center;
+	}
+}
+.button{
+	padding:10px;
+	transition: background-color 1s ease;
+	background:rgb(63, 81, 181);
+	color:white;
+}
+.scrolldown{
+	font-size:20px !important;
+}
+
+
+</style>
+<body>
+<div class="w3-display-topleft w3-padding-large w3-xlarge" id="header">
+    	<div class="right">Instances <a href="../index.php">Login</a></div>
+  </div>
+<div id="get-it-now" class="bgimg bgimg1 w3-display-container w3-animate-opacity w3-text-black">
+  
+  <div class="w3-display-right slide">
+    <h1 class="w3-jumbo w3-animate-top">Carnet.live</h1>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <p class="w3-large w3-center">Powerful note taking app</p>
+    <p class="w3-large w3-center">Available online and on Android</p>
+    <p class="w3-large w3-center"><a href="../index.php" class="button">Register / Login</a></p>
+    <p class="w3-large w3-center"><a href="https://qn.phie.ovh/binaries/android/current.apk" id="android" class="button">Android</a></p>
+  </div>
+  <div class="w3-display-bottomleft w3-padding-large" style="position:fixed;">
+    Sources
+  </div>
+	<div class="w3-display-bottommiddle w3-padding-large scrolldown">
+	    <a href="#discover">↓ Discover ↓</a>
+	  </div>
+</div>
+<div id="discover" class="bgimg bgimg2 w3-display-container w3-animate-opacity w3-text-black">
+  
+  <div class="w3-display-right slide slide2">
+    <h1 class="w3-jumbo w3-animate-top">Material overview</h1>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <p class="w3-large w3-center">Quick access to summary, metadata and keywords</p>
+	
+  </div>
+<div class="w3-display-bottommiddle w3-padding-large scrolldown">
+	     <a href="#editor">↓ Editor ↓</a>
+	  </div>
+</div>
+<div id="editor" class="bgimg bgimg3 w3-display-container w3-animate-opacity w3-text-black">
+  
+  <div class="w3-display-right slide">
+    <h1 class="w3-jumbo w3-animate-top">Complete editor</h1>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <p class="w3-large w3-center">What you see is what you get</p>
+
+  </div>
+  <div class="w3-display-bottommiddle w3-padding-large scrolldown">
+	     <a href="#get-it-now">↑ Get it now ↑</a>
+	  </div>
+</div>
+
+</body>
+</html>
